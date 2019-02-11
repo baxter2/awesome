@@ -1,6 +1,7 @@
 def common_dimension(from, to)
   CONVERSION_FACTORS.keys.find do |canonical_unit|
-    CONVERSION_FACTORS[canonical_unit].keys.include?(from) && CONVERSION_FACTORS[canonical_unit].keys.include?(to) 
+    CONVERSION_FACTORS[canonical_unit].keys.include?(from) && 
+    CONVERSION_FACTORS[canonical_unit].keys.include?(to) 
   end
 end
 
