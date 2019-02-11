@@ -3,7 +3,7 @@
 ### Usage
 
 Given:
-```
+```ruby
 CONVERSION_FACTORS = {
   metre: {
     kilometre:     0.001,
@@ -56,4 +56,4 @@ CONVERSION_FACTORS = {
 
 ### Languages
 * Python
-* [Ruby]()
+* [Ruby](./src/lotto.rb)
