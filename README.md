@@ -1,6 +1,6 @@
 # Common Dimension
 
-### Format Ruby :ruby:
+### Format Ruby :gem:
 ```ruby
 $ irb -r ./src/common-dimension.rb
 
