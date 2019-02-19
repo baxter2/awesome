@@ -75,7 +75,7 @@
 
     private
 
-# tile_mappings => [{:location=>1, :destination=>3}, {:location=>4, :destination=>2}]
+# tile_mappings => [{:class=>:Portal, :location=>1, :destination=>3},  {:class=>:Portal, :location=>4, :destination=>2}]
       def tile_at(index) #=> 1, 2, 3, 4
         if mapping = tile_mappings.detect { |tile_map|                                         tile_map[:location].equal?(index) }
 # 1.    if mapping = tile_mappings.detect { |{:class=>:Portal, :location=>1, :destination=>3}|                   1.equal?(    1) }
