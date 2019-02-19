@@ -54,6 +54,7 @@ module Monopoly
 
     private
 # {:class=>:Tile, :name=>"Go", :buyable=>false}
+# https://stackoverflow.com/questions/3908380/ruby-class-types-and-case-statements
     def create_instance(index)
       klass = tile_mappings[index][:class] 
       if :Tile === klass
