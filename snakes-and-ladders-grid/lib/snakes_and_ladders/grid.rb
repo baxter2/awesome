@@ -1,3 +1,4 @@
+require 'pry'
 module SnakesAndLadders
   class Grid
     attr_reader :size, :tile_mappings, :default_tile

@@ -1,27 +1,6 @@
 ```ruby
 >> mappings = [{:class=>:Portal, :location=>1, :destination=>38}, {:class=>:Portal, :location=>4, :destination=>14}, {:class=>:Portal, :location=>9, :destination=>31}, {:class=>:Portal, :location=>16, :destination=>6}, {:class=>:Portal, :location=>28, :destination=>84}, {:class=>:Portal, :location=>36, :destination=>44}, {:class=>:Portal, :location=>40, :destination=>42}, {:class=>:Portal, :location=>47, :destination=>26}, {:class=>:Portal, :location=>49, :destination=>11}, {:class=>:Portal, :location=>51, :destination=>67}, {:class=>:Portal, :location=>56, :destination=>53}, {:class=>:Portal, :location=>62, :destination=>19}, {:class=>:Portal, :location=>64, :destination=>60}, {:class=>:Portal, :location=>71, :destination=>81}, {:class=>:Portal, :location=>80, :destination=>100}, {:class=>:Portal, :location=>87, :destination=>24}, {:class=>:Portal, :location=>93, :destination=>73}, {:class=>:Portal, :location=>95, :destination=>75}, {:class=>:Portal, :location=>98, :destination=>78}]
 
->> pp mappings
-[{:class=>:Portal, :location=>1, :destination=>38},
- {:class=>:Portal, :location=>4, :destination=>14},
- {:class=>:Portal, :location=>9, :destination=>31},
- {:class=>:Portal, :location=>16, :destination=>6},
- {:class=>:Portal, :location=>28, :destination=>84},
- {:class=>:Portal, :location=>36, :destination=>44},
- {:class=>:Portal, :location=>40, :destination=>42},
- {:class=>:Portal, :location=>47, :destination=>26},
- {:class=>:Portal, :location=>49, :destination=>11},
- {:class=>:Portal, :location=>51, :destination=>67},
- {:class=>:Portal, :location=>56, :destination=>53},
- {:class=>:Portal, :location=>62, :destination=>19},
- {:class=>:Portal, :location=>64, :destination=>60},
- {:class=>:Portal, :location=>71, :destination=>81},
- {:class=>:Portal, :location=>80, :destination=>100},
- {:class=>:Portal, :location=>87, :destination=>24},
- {:class=>:Portal, :location=>93, :destination=>73},
- {:class=>:Portal, :location=>95, :destination=>75},
- {:class=>:Portal, :location=>98, :destination=>78}]
-
 >> SnakesAndLadders::Grid.new(size: 100, tile_mappings: mappings, default_tile: :Cell)
 => <SnakesAndLadders::Grid:0x0
       @size=100, 
@@ -57,85 +36,6 @@
     8=><SnakesAndLadders::Cell:0x007f9e74a5ba80 @location=8, @players=[]>,
     9=><SnakesAndLadders::Portal:0x007f9e74a5b990 @destination=31, @location=9, @players=[]>,
    10=><SnakesAndLadders::Cell:0x007f9e74a5b7d8 @location=10, @players=[]>,
-   11=><SnakesAndLadders::Cell:0x007f9e74a5b670 @location=11, @players=[]>,
-   12=><SnakesAndLadders::Cell:0x007f9e74a5b508 @location=12, @players=[]>,
-   13=><SnakesAndLadders::Cell:0x007f9e74a5b350 @location=13, @players=[]>,
-   14=><SnakesAndLadders::Cell:0x007f9e74a5afb8 @location=14, @players=[]>,
-   15=><SnakesAndLadders::Cell:0x007f9e74a5a9a0 @location=15, @players=[]>,
-   16=><SnakesAndLadders::Portal:0x007f9e74a5a428 @destination=6, @location=16, @players=[]>,
-   17=><SnakesAndLadders::Cell:0x007f9e74a59d48 @location=17, @players=[]>,
-   18=><SnakesAndLadders::Cell:0x007f9e74a598c0 @location=18, @players=[]>,
-   19=><SnakesAndLadders::Cell:0x007f9e74a59618 @location=19, @players=[]>,
-   20=><SnakesAndLadders::Cell:0x007f9e74a59348 @location=20, @players=[]>,
-   21=><SnakesAndLadders::Cell:0x007f9e74a58df8 @location=21, @players=[]>,
-   22=><SnakesAndLadders::Cell:0x007f9e74a58c40 @location=22, @players=[]>,
-   23=><SnakesAndLadders::Cell:0x007f9e74a58a88 @location=23, @players=[]>,
-   24=><SnakesAndLadders::Cell:0x007f9e74a58880 @location=24, @players=[]>,
-   25=><SnakesAndLadders::Cell:0x007f9e74a586a0 @location=25, @players=[]>,
-   26=><SnakesAndLadders::Cell:0x007f9e74a58510 @location=26, @players=[]>,
-   27=><SnakesAndLadders::Cell:0x007f9e74a58150 @location=27, @players=[]>,
-   28=><SnakesAndLadders::Portal:0x007f9e74a58178 @destination=84, @location=28, @players=[]>,
-   29=><SnakesAndLadders::Cell:0x007f9e74a59730 @location=29, @players=[]>,
-   30=><SnakesAndLadders::Cell:0x007f9e74a5b260 @location=30, @players=[]>,
-   31=><SnakesAndLadders::Cell:0x007f9e74a5bbc0 @location=31, @players=[]>,
-   32=><SnakesAndLadders::Cell:0x007f9e74a53df8 @location=32, @players=[]>,
-   33=><SnakesAndLadders::Cell:0x007f9e74a53b00 @location=33, @players=[]>,
-   34=><SnakesAndLadders::Cell:0x007f9e74a53998 @location=34, @players=[]>,
-   35=><SnakesAndLadders::Cell:0x007f9e74a53880 @location=35, @players=[]>,
-   36=><SnakesAndLadders::Portal:0x007f9e74a53740 @destination=44, @location=36, @players=[]>,
-   37=><SnakesAndLadders::Cell:0x007f9e74a535b0 @location=37, @players=[]>,
-   38=><SnakesAndLadders::Cell:0x007f9e74a53498 @location=38, @players=[]>,
-   39=><SnakesAndLadders::Cell:0x007f9e74a53308 @location=39, @players=[]>,
-   40=><SnakesAndLadders::Portal:0x007f9e74a531f0 @destination=42, @location=40, @players=[]>,
-   41=><SnakesAndLadders::Cell:0x007f9e74a53038 @location=41, @players=[]>,
-   42=><SnakesAndLadders::Cell:0x007f9e74a52f48 @location=42, @players=[]>,
-   43=><SnakesAndLadders::Cell:0x007f9e74a52e58 @location=43, @players=[]>,
-   44=><SnakesAndLadders::Cell:0x007f9e74a52cf0 @location=44, @players=[]>,
-   45=><SnakesAndLadders::Cell:0x007f9e74a52c00 @location=45, @players=[]>,
-   46=><SnakesAndLadders::Cell:0x007f9e74a52ac0 @location=46, @players=[]>,
-   47=><SnakesAndLadders::Portal:0x007f9e74a529d0 @destination=26, @location=47, @players=[]>,
-   48=><SnakesAndLadders::Cell:0x007f9e74a52868 @location=48, @players=[]>,
-   49=><SnakesAndLadders::Portal:0x007f9e74a52728 @destination=11, @location=49, @players=[]>,
-   50=><SnakesAndLadders::Cell:0x007f9e74a52598 @location=50, @players=[]>,
-   51=><SnakesAndLadders::Portal:0x007f9e74a52408 @destination=67, @location=51, @players=[]>,
-   52=><SnakesAndLadders::Cell:0x007f9e74a52228 @location=52, @players=[]>,
-   53=><SnakesAndLadders::Cell:0x007f9e74a52138 @location=53, @players=[]>,
-   54=><SnakesAndLadders::Cell:0x007f9e74a52020 @location=54, @players=[]>,
-   55=><SnakesAndLadders::Cell:0x007f9e74a51e90 @location=55, @players=[]>,
-   56=><SnakesAndLadders::Portal:0x007f9e74a51d78 @destination=53, @location=56, @players=[]>,
-   57=><SnakesAndLadders::Cell:0x007f9e74a51aa8 @location=57, @players=[]>,
-   58=><SnakesAndLadders::Cell:0x007f9e74a51800 @location=58, @players=[]>,
-   59=><SnakesAndLadders::Cell:0x007f9e74a51670 @location=59, @players=[]>,
-   60=><SnakesAndLadders::Cell:0x007f9e74a50f90 @location=60, @players=[]>,
-   61=><SnakesAndLadders::Cell:0x007f9e74a50bf8 @location=61, @players=[]>,
-   62=><SnakesAndLadders::Portal:0x007f9e74a50888 @destination=19, @location=62, @players=[]>,
-   63=><SnakesAndLadders::Cell:0x007f9e74a505e0 @location=63, @players=[]>,
-   64=><SnakesAndLadders::Portal:0x007f9e74a50478 @destination=60, @location=64, @players=[]>,
-   65=><SnakesAndLadders::Cell:0x007f9e74a50298 @location=65, @players=[]>,
-   66=><SnakesAndLadders::Cell:0x007f9e74a500b8 @location=66, @players=[]>,
-   67=><SnakesAndLadders::Cell:0x007f9e74a53448 @location=67, @players=[]>,
-   68=><SnakesAndLadders::Cell:0x007f9e74a53e48 @location=68, @players=[]>,
-   69=><SnakesAndLadders::Cell:0x007f9e74a4be78 @location=69, @players=[]>,
-   70=><SnakesAndLadders::Cell:0x007f9e74a4bd10 @location=70, @players=[]>,
-   71=><SnakesAndLadders::Portal:0x007f9e74a4b978 @destination=81, @location=71, @players=[]>,
-   72=><SnakesAndLadders::Cell:0x007f9e74a4b3b0 @location=72, @players=[]>,
-   73=><SnakesAndLadders::Cell:0x007f9e74a4afc8 @location=73, @players=[]>,
-   74=><SnakesAndLadders::Cell:0x007f9e74a4ae60 @location=74, @players=[]>,
-   75=><SnakesAndLadders::Cell:0x007f9e74a4acf8 @location=75, @players=[]>,
-   76=><SnakesAndLadders::Cell:0x007f9e74a4ab68 @location=76, @players=[]>,
-   77=><SnakesAndLadders::Cell:0x007f9e74a4a9b0 @location=77, @players=[]>,
-   78=><SnakesAndLadders::Cell:0x007f9e74a4a848 @location=78, @players=[]>,
-   79=><SnakesAndLadders::Cell:0x007f9e74a4a708 @location=79, @players=[]>,
-   80=><SnakesAndLadders::Portal:0x007f9e74a4a5c8 @destination=100, @location=80, @players=[]>,
-   81=><SnakesAndLadders::Cell:0x007f9e74a4a3c0 @location=81, @players=[]>,
-   82=><SnakesAndLadders::Cell:0x007f9e74a4a230 @location=82, @players=[]>,
-   83=><SnakesAndLadders::Cell:0x007f9e74a49f10 @location=83, @players=[]>,
-   84=><SnakesAndLadders::Cell:0x007f9e74a49ce0 @location=84, @players=[]>,
-   85=><SnakesAndLadders::Cell:0x007f9e74a49ba0 @location=85, @players=[]>,
-   86=><SnakesAndLadders::Cell:0x007f9e74a49ab0 @location=86, @players=[]>,
-   87=><SnakesAndLadders::Portal:0x007f9e74a49998 @destination=24, @location=87, @players=[]>,
-   88=><SnakesAndLadders::Cell:0x007f9e74a49790 @location=88, @players=[]>,
-   89=><SnakesAndLadders::Cell:0x007f9e74a495d8 @location=89, @players=[]>,
    90=><SnakesAndLadders::Cell:0x007f9e74a494c0 @location=90, @players=[]>,
    91=><SnakesAndLadders::Cell:0x007f9e74a49380 @location=91, @players=[]>,
    92=><SnakesAndLadders::Cell:0x007f9e74a49290 @location=92, @players=[]>,
@@ -149,5 +49,52 @@
   100=><SnakesAndLadders::Cell:0x007f9e74a48778 @location=100, @players=[]>}
 ```
 
+```ruby
+[snakes_and_ladders]$ irb
+>> require_relative 'grid.rb'
+=> true
+
+>> tile_mappings = [{:class=>:Portal, :location=>1, :destination=>3},  {:class=>:Portal, :location=>4, :destination=>2}]
+=> [{:class=>:Portal, :location=>1, :destination=>3}, {:class=>:Portal, :location=>4, :destination=>2}]
+
+>> grid = SnakesAndLadders::Grid.new(size: 4, tile_mappings: tile_mappings, default_tile: :Cell)
+=> #<SnakesAndLadders::Grid:0x007f8369a0aed0 @size=4, @tile_mappings=[{:class=>:Portal, :location=>1, :destination=>3}, {:class=>:Portal, :location=>4, :destination=>2}], @default_tile=:Cell>
+
+>> grid.build_v2
+=> {1=><SnakesAndLadders::Portal:0x007f8369a01bc8 @location=1, @destination=3>, 
+    2=><SnakesAndLadders::Cell:0x007f8369a01a10 @location=2>, 
+    3=><SnakesAndLadders::Cell:0x007f8369a01920 @location=3>, 
+    4=><SnakesAndLadders::Portal:0x007f8369a01600 @location=4, @destination=2>}
+```
 
 
+```ruby
+    def build_v2
+      (1..size).each_with_object({}) { |index, grid| grid[index] = tile_at(index) }
+    end
+
+    private
+
+# tile_mappings => [{:location=>1, :destination=>3}, {:location=>4, :destination=>2}]
+      def tile_at(index) #=> 1, 2, 3, 4
+        if mapping = tile_mappings.detect { |tile_map|                                         tile_map[:location].equal?(index) }
+# 1.    if mapping = tile_mappings.detect { |{:class=>:Portal, :location=>1, :destination=>3}|                   1.equal?(    1) }
+# 1.       mapping => {:class=>:Portal, :location=>1, :destination=>3}
+
+# 4.    if mapping = tile_mappings.detect { |{:class=>:Portal, :location=>4, :destination=>2}|                   1.equal?(    4) }
+# 4.       mapping => {:class=>:Portal, :location=>4, :destination=>2}
+
+          klass = mapping.delete(:class)
+# 1.      klass => :Portal
+# 4.      klass => :Portal
+          SnakesAndLadders.const_get(klass).new(mapping)
+# 1.      SnakesAndLadders.const_get(:Portal).new({:location=>1, :destination=>3}) => #<SnakesAndLadders::Portal:0x007fb72404b9f0 @destination=3, @location=1>
+# 4.      SnakesAndLadders.const_get(:Portal).new({:location=>4, :destination=>2}) => #<SnakesAndLadders::Portal:0x007fc5c53198a8 @destination=2, @location=4>
+        else
+          SnakesAndLadders.const_get(default_tile).new(location: index)
+# 2.      SnakesAndLadders.const_get(       :Cell).new(location:     2)            #=> #<SnakesAndLadders::Cell:0x007fc5c52f0200 @location=2>
+# 3.      SnakesAndLadders.const_get(       :Cell).new(location:     3)            #=> #<SnakesAndLadders::Cell:0x007fc5c41bf3c8 @location=3>
+        end
+      end
+
+```
