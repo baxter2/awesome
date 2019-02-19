@@ -17,6 +17,7 @@ module SnakesAndLadders
       hash
     end
 
+# https://github.com/abitdodgy/snakes_and_ladders/blob/b3f03b0dd629714dd35324f304d869660d351e5a/lib/snakes_and_ladders/grid.rb
     def build_v2
       (1..size).each_with_object({}) { |index, grid| grid[index] = tile_at(index) }
     end
@@ -34,6 +35,14 @@ module SnakesAndLadders
 
   end 
 
+  class Cell
+    attr_reader :location
+
+    def initialize(location: location)
+      @location = location
+    end
+  end
+
   class Portal
     attr_reader :location, :destination
 
@@ -43,11 +52,4 @@ module SnakesAndLadders
     end
   end
 
-  class Cell
-    attr_reader :location
-
-    def initialize(location: location)
-      @location = location
-    end
-  end
 end
